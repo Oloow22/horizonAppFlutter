@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "716244482162",
+    "project_id": "jobfindr-99c6c",
+    "storage_bucket": "jobfindr-99c6c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716244482162:android:291e743fe478594b9f6aeb",
+        "android_client_info": {
+          "package_name": "jodfindr.d22"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716244482162-mfrg22nrj9t0qqm3c735ccdvgrjisoq5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD8R5waIUQMQgXnGtcGYzjJrJ5YlgYH1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716244482162-mfrg22nrj9t0qqm3c735ccdvgrjisoq5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "716244482162-6j6cd77dr0gqu1449nns4kpgnpereb3s.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.practice"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
