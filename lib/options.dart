@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:practice/add_jobs.dart';
+import 'package:practice/apijobs.dart';
 import 'package:practice/govt_jobs.dart';
 import 'package:practice/homepage.dart';
 import 'package:practice/jobcompanies.dart';
@@ -135,6 +136,34 @@ class _OptionsState extends State<Options> {
                 },
               ),
             ),
+
+            Card(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(32.0)),
+              color: Colors.indigo.shade300,
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+              child: ListTile(
+                contentPadding:
+                    EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                title: Center(
+                  child: Text(
+                    'API JOBS',
+                    style: GoogleFonts.acme(
+                      color: Colors.grey.shade50,
+                      fontSize: 20,
+                      fontStyle: FontStyle.normal
+                    ),
+                    ),
+                ),
+                subtitle: Text(''),
+                onTap: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => APIjobs()));
+                },
+              ),
+            ),
+
           ]),
         ),
       ),
