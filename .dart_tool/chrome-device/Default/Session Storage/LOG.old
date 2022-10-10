@@ -1,3 +1,2 @@
-2022/10/07-19:34:52.736 3003 Reusing MANIFEST /private/var/folders/pm/bzch5s2d1cd2v5nct6hrm75h0000gn/T/flutter_tools.k42iN2/flutter_tools_chrome_device.nPFgpJ/Default/Session Storage/MANIFEST-000001
-2022/10/07-19:34:52.740 3003 Recovering log #3
-2022/10/07-19:34:52.748 3003 Reusing old log /private/var/folders/pm/bzch5s2d1cd2v5nct6hrm75h0000gn/T/flutter_tools.k42iN2/flutter_tools_chrome_device.nPFgpJ/Default/Session Storage/000003.log 
+2022/10/10-15:40:00.882 290c Creating DB C:\Users\User\AppData\Local\Temp\flutter_tools.76b98d54\flutter_tools_chrome_device.30933019\Default\Session Storage since it was missing.
+2022/10/10-15:40:01.834 290c Reusing MANIFEST C:\Users\User\AppData\Local\Temp\flutter_tools.76b98d54\flutter_tools_chrome_device.30933019\Default\Session Storage/MANIFEST-000001

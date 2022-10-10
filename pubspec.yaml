@@ -34,6 +34,10 @@ dependencies:
   firebase_core: ^1.22.0  
   firebase_database: ^9.1.4
   cloud_firestore: ^3.4.9
+  http: ^0.13.5
+  location: ^4.1.1
+  flutter_dotenv: ^5.0.2
+  dio: ^4.0.6
    
 
 
@@ -44,6 +48,7 @@ dependencies:
   firebase_auth: ^3.9.0
   url_launcher: ^6.1.6
   google_fonts: ^3.0.1
+
 
 dev_dependencies:
   flutter_test:
@@ -85,7 +90,9 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+
      - images/p.png
+     - .env
      - images/login.png
      - images/cof.png
      - images/comp.png
