@@ -45,6 +45,9 @@ dependencies:
   url_launcher: ^6.1.6
   google_fonts: ^3.0.1
   http: ^0.13.5
+  json_annotation: ^4.7.0
+  build_runner: ^2.3.0
+  json_serializable: ^6.5.1
 
 dev_dependencies:
   flutter_test:
