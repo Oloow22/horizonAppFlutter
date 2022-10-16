@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:practice/add_jobs.dart';
 import 'package:practice/apijobs.dart';
+import 'package:practice/break.dart';
 import 'package:practice/govt_jobs.dart';
 import 'package:practice/homepage.dart';
 import 'package:practice/jobcompanies.dart';
+import 'package:practice/news.dart';
 import 'package:practice/options.dart';
 import 'package:practice/unis.dart';
 import 'package:practice/yourCV.dart';

@@ -12,6 +12,8 @@ import 'package:practice/main.dart';
 import 'package:practice/unis.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'news.dart';
+
 class Options extends StatefulWidget {
   const Options({super.key});
 
@@ -133,6 +135,30 @@ class _OptionsState extends State<Options> {
                 onTap: () {
                   Navigator.of(context).push(
                       MaterialPageRoute(builder: (context) => Jobsites()));
+                },
+              ),
+            ),
+            Card(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(32.0)),
+              color: Colors.indigo.shade300,
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+              child: ListTile(
+                contentPadding:
+                    EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                title: Center(child: Text(
+                  style: GoogleFonts.acme(
+                      color: Colors.grey.shade50,
+                      fontSize: 20,
+                      fontStyle: FontStyle.normal
+                    ),
+                  'News Articles')),
+                subtitle: Text(
+                    ''),
+                onTap: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => NewsFeed()));
                 },
               ),
             ),
