@@ -1,9 +1,11 @@
-import 'dart:html';
-import 'dart:io';
+//import 'dart:html';
+//import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:practice/Apijob_categories.dart';
 import 'package:practice/add_jobs.dart';
+import 'package:practice/display_apidata.dart';
 import 'package:practice/govt_jobs.dart';
 import 'package:practice/homepage.dart';
 import 'package:practice/jobcompanies.dart';
@@ -26,13 +28,18 @@ class _OptionsState extends State<Options> {
         backgroundColor: Colors.purple.shade800,
         child: Icon(Icons.post_add_rounded),
         onPressed: (){
-           Navigator.of(context).push(MaterialPageRoute(builder: (context) => Addjobs()));
+           Navigator.of(context).push(MaterialPageRoute(builder: (context) => 
+           Addjobs()
+           
+           ));
         },
       ),
       backgroundColor: Colors.purple.shade50,
       body: Container(
         child: Center(
-          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+          child: ListView(
+            //mainAxisAlignment: MainAxisAlignment.center, 
+          children: [
             Image.asset('images/user.png'),
             SizedBox(height: 17),
             Card(
@@ -135,6 +142,59 @@ class _OptionsState extends State<Options> {
                 },
               ),
             ),
+
+
+             Card(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(32.0)),
+              color: Colors.indigo.shade300,
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+              child: ListTile(
+                contentPadding:
+                    EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                title: Center(child: Text(
+                  style: GoogleFonts.acme(
+                      color: Colors.grey.shade50,
+                      fontSize: 20,
+                      fontStyle: FontStyle.normal
+                    ),
+                  'Job Statistics')),
+                subtitle: Text(
+                    ''),
+                onTap: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => online()));
+                },
+              ),
+            ),
+
+
+             Card(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(32.0)),
+              color: Colors.indigo.shade300,
+              elevation: 5,
+              margin: EdgeInsets.all(10),
+              child: ListTile(
+                contentPadding:
+                    EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                title: Center(child: Text(
+                  style: GoogleFonts.acme(
+                      color: Colors.grey.shade50,
+                      fontSize: 20,
+                      fontStyle: FontStyle.normal
+                    ),
+                  'Job Categories')),
+                subtitle: Text(
+                    ''),
+                onTap: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => categories()));
+                },
+              ),
+            ),
+
           ]),
         ),
       ),

@@ -70,37 +70,37 @@ class _HomeState extends State<Home> {
                       },
                     ),
                   ],
-                )
-                ),
-                _jobs != null ? Text('Got ${_jobs.length} results'):
-            SizedBox(
-                width: double.infinity,
-                child: FloatingActionButton(
-                  onPressed: () {
-                    // ignore: unused_local_variable
-                    final _isValid = _formKey.currentState!.validate();
-                    if (_isValid) {
-                      searchJobs(query);
-                      // do perform search
-                    } else {
-                      // dont perform search
-                      setState(() {
-                        _autoValidate = true;
-                      });
-                    }
-                  },
-                  backgroundColor: Colors.purple,
-                  child: Padding(
-                    padding: const EdgeInsets.all(15),
-                    child: Text(
-                      'Search for a job',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
+                )),
+            _jobs != null
+                ? Text('Got ${_jobs.length} results')
+                : SizedBox(
+                    width: double.infinity,
+                    child: FloatingActionButton(
+                      onPressed: () {
+                        // ignore: unused_local_variable
+                        final _isValid = _formKey.currentState!.validate();
+                        if (_isValid) {
+                          searchJobs(query);
+                          // do perform search
+                        } else {
+                          // dont perform search
+                          setState(() {
+                            _autoValidate = true;
+                          });
+                        }
+                      },
+                      backgroundColor: Colors.purple,
+                      child: Padding(
+                        padding: const EdgeInsets.all(15),
+                        child: Text(
+                          'Search for a job',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 18,
+                          ),
+                        ),
                       ),
-                    ),
-                  ),
-                ))
+                    ))
           ],
         ),
       ),
@@ -114,6 +114,18 @@ class _HomeState extends State<Home> {
       ),
       appBar: AppBar(
         actions: [
+          TextButton(
+            style: TextButton.styleFrom(
+              textStyle: const TextStyle(fontSize: 20),
+            ),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => MyApp()),
+              );
+            },
+            child: const Text('TEST API'),
+          ),
           TextButton.icon(
             onPressed: () {
               Navigator.pushAndRemoveUntil(
