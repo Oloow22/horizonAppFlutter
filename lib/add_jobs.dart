@@ -24,7 +24,7 @@ class _AddjobsState extends State<Addjobs> {
         children: [
           SizedBox( height: 70,),
           Text(
-            'Contact information',
+            'Kind of Job, And company name.',
             style:  GoogleFonts.acme(
                       color: Colors.purple.shade800,
                       fontSize: 20,
@@ -47,7 +47,7 @@ class _AddjobsState extends State<Addjobs> {
           ),
           SizedBox( height: 20,),
           Text(
-            'Job Description',
+            'Job Description and requirements for applying ',
             style:  GoogleFonts.acme(
                       color: Colors.purple.shade800,
                       fontSize: 20,

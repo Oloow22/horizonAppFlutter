@@ -18,7 +18,7 @@ class _onlineState extends State<online> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('example'),
+        title: Text('Differrent kind of jobs'),
       ),
       body: Center(
           child: FutureBuilder<JobsResponse>(
@@ -29,12 +29,13 @@ class _onlineState extends State<online> {
                       itemCount: Snapshot.data!.leaderboard.length,
                       itemBuilder: (context, index) {
                         return ListTile(
-                          title: Text(
-                              Snapshot.data!.leaderboard[index].canonicalName),
-                              trailing:Text(Snapshot.data!.leaderboard[index].count.toString()),
-                            subtitle: Text(Snapshot.data!.leaderboard[index].leaderboardClass
-                              
-                        ));
+                            title: Text(Snapshot
+                                .data!.leaderboard[index].canonicalName),
+                            trailing: Text(Snapshot
+                                .data!.leaderboard[index].count
+                                .toString()),
+                            subtitle: Text(Snapshot
+                                .data!.leaderboard[index].leaderboardClass));
                       });
                 } else if (Snapshot.hasError) {
                   return Text('${Snapshot.error}');
@@ -45,8 +46,8 @@ class _onlineState extends State<online> {
   }
 
   String url =
-  //'http://api.adzuna.com/v1/api/jobs/gb/categories?app_id=ad59f513&app_key=3ec7da19a6d52a50da848a78e0774806&&content-type=application/json'
-     'https://api.adzuna.com/v1/api/jobs/gb/top_companies?app_id=ad59f513&app_key=3ec7da19a6d52a50da848a78e0774806';
+      //'http://api.adzuna.com/v1/api/jobs/gb/categories?app_id=ad59f513&app_key=3ec7da19a6d52a50da848a78e0774806&&content-type=application/json'
+      'https://api.adzuna.com/v1/api/jobs/gb/top_companies?app_id=ad59f513&app_key=3ec7da19a6d52a50da848a78e0774806';
   Future<JobsResponse> fetchAlbum() async {
     final response = await http.get(Uri.parse(url));
     if (response.statusCode == 200) {

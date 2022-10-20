@@ -16,7 +16,7 @@ class _categoriesState extends State<categories> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('example'),
+        title: Text('Differrent kind of jobs'),
       ),
       body: Center(
           child: FutureBuilder<Jobscategories>(

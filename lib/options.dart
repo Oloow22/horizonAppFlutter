@@ -27,199 +27,183 @@ class _OptionsState extends State<Options> {
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.purple.shade800,
         child: Icon(Icons.post_add_rounded),
-        onPressed: (){
-           Navigator.of(context).push(MaterialPageRoute(builder: (context) => 
-           Addjobs()
-           
-           ));
+        onPressed: () {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (context) => Addjobs()));
         },
       ),
       backgroundColor: Colors.purple.shade50,
       body: Container(
         child: Center(
           child: ListView(
-            //mainAxisAlignment: MainAxisAlignment.center, 
-          children: [
-            Image.asset('images/user.png'),
-            SizedBox(height: 17),
-            Card(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(32.0)),
-              color: Colors.indigo.shade300,
-              elevation: 5,
-              margin: EdgeInsets.all(10),
-              child: ListTile(
-                contentPadding:
-                    EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                title: Center(
-                  child: Text(
-                    'Universities',
-                    style: GoogleFonts.acme(
-                      color: Colors.grey.shade50,
-                      fontSize: 20,
-                      fontStyle: FontStyle.normal
+              //mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset('images/user.png'),
+                SizedBox(height: 17),
+                Card(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(32.0)),
+                  color: Colors.indigo.shade300,
+                  elevation: 5,
+                  margin: EdgeInsets.all(10),
+                  child: ListTile(
+                    contentPadding:
+                        EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    title: Center(
+                      child: Text(
+                        'Universities',
+                        style: GoogleFonts.acme(
+                            color: Colors.grey.shade50,
+                            fontSize: 20,
+                            fontStyle: FontStyle.normal),
+                      ),
                     ),
-                    ),
+                    subtitle: Text(''),
+                    onTap: () {
+                      Navigator.of(context)
+                          .push(MaterialPageRoute(builder: (context) => Uni()));
+                    },
+                  ),
                 ),
-                subtitle: Text(''),
-                onTap: () {
-                  Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => Uni()));
-                },
-              ),
-            ),
-
-
-            Card(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(32.0)),
-              color: Colors.indigo.shade300,
-              elevation: 5,
-              margin: EdgeInsets.all(10),
-              child: ListTile(
-                contentPadding:
-                    EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                title: Center(child: Text(
-                   style: GoogleFonts.acme(
-                      color: Colors.grey.shade50,
-                      fontSize: 20,
-                      fontStyle: FontStyle.normal
-                    ),
-                  ' Local jobs')),
-                subtitle: Text(
-                    ''),
-                onTap: () {
-                  Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => Home()));
-                },
-              ),
-            ),
-            Card(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(32.0)),
-              color: Colors.indigo.shade300,
-              elevation: 5,
-              margin: EdgeInsets.all(10),
-              child: ListTile(
-                contentPadding:
-                    EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                title: Center(child: Text(
-                  style: GoogleFonts.acme(
-                      color: Colors.grey.shade50,
-                      fontSize: 20,
-                      fontStyle: FontStyle.normal
-                    ),
-                  'Government jobs')),
-                subtitle:
-                    Text(''),
-                onTap: () {
-                  Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => Govt()));
-                },
-              ),
-            ),
-            Card(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(32.0)),
-              color: Colors.indigo.shade300,
-              elevation: 5,
-              margin: EdgeInsets.all(10),
-              child: ListTile(
-                contentPadding:
-                    EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                title: Center(child: Text(
-                  style: GoogleFonts.acme(
-                      color: Colors.grey.shade50,
-                      fontSize: 20,
-                      fontStyle: FontStyle.normal
-                    ),
-                  'Job websites')),
-                subtitle: Text(
-                    ''),
-                onTap: () {
-                  Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => Jobsites()));
-                },
-              ),
-            ),
-
-
-             Card(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(32.0)),
-              color: Colors.indigo.shade300,
-              elevation: 5,
-              margin: EdgeInsets.all(10),
-              child: ListTile(
-                contentPadding:
-                    EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                title: Center(child: Text(
-                  style: GoogleFonts.acme(
-                      color: Colors.grey.shade50,
-                      fontSize: 20,
-                      fontStyle: FontStyle.normal
-                    ),
-                  'Job Statistics')),
-                subtitle: Text(
-                    ''),
-                onTap: () {
-                  Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => online()));
-                },
-              ),
-            ),
-
-
-             Card(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(32.0)),
-              color: Colors.indigo.shade300,
-              elevation: 5,
-              margin: EdgeInsets.all(10),
-              child: ListTile(
-                contentPadding:
-                    EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                title: Center(child: Text(
-                  style: GoogleFonts.acme(
-                      color: Colors.grey.shade50,
-                      fontSize: 20,
-                      fontStyle: FontStyle.normal
-                    ),
-                  'Job Categories')),
-                subtitle: Text(
-                    ''),
-                onTap: () {
-                  Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => categories()));
-                },
-              ),
-            ),
-
-          ]),
+                Card(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(32.0)),
+                  color: Colors.indigo.shade300,
+                  elevation: 5,
+                  margin: EdgeInsets.all(10),
+                  child: ListTile(
+                    contentPadding:
+                        EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    title: Center(
+                        child: Text(
+                            style: GoogleFonts.acme(
+                                color: Colors.grey.shade50,
+                                fontSize: 20,
+                                fontStyle: FontStyle.normal),
+                            ' Local jobs')),
+                    subtitle: Text(''),
+                    onTap: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => Home()));
+                    },
+                  ),
+                ),
+                Card(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(32.0)),
+                  color: Colors.indigo.shade300,
+                  elevation: 5,
+                  margin: EdgeInsets.all(10),
+                  child: ListTile(
+                    contentPadding:
+                        EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    title: Center(
+                        child: Text(
+                            style: GoogleFonts.acme(
+                                color: Colors.grey.shade50,
+                                fontSize: 20,
+                                fontStyle: FontStyle.normal),
+                            'Government jobs')),
+                    subtitle: Text(''),
+                    onTap: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => Govt()));
+                    },
+                  ),
+                ),
+                Card(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(32.0)),
+                  color: Colors.indigo.shade300,
+                  elevation: 5,
+                  margin: EdgeInsets.all(10),
+                  child: ListTile(
+                    contentPadding:
+                        EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    title: Center(
+                        child: Text(
+                            style: GoogleFonts.acme(
+                                color: Colors.grey.shade50,
+                                fontSize: 20,
+                                fontStyle: FontStyle.normal),
+                            'Job websites')),
+                    subtitle: Text(''),
+                    onTap: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => Jobsites()));
+                    },
+                  ),
+                ),
+                Card(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(32.0)),
+                  color: Colors.indigo.shade300,
+                  elevation: 5,
+                  margin: EdgeInsets.all(10),
+                  child: ListTile(
+                    contentPadding:
+                        EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    title: Center(
+                        child: Text(
+                            style: GoogleFonts.acme(
+                                color: Colors.grey.shade50,
+                                fontSize: 20,
+                                fontStyle: FontStyle.normal),
+                            'Job Statistics')),
+                    subtitle: Text(''),
+                    onTap: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => online()));
+                    },
+                  ),
+                ),
+                Card(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(32.0)),
+                  color: Colors.indigo.shade300,
+                  elevation: 5,
+                  margin: EdgeInsets.all(10),
+                  child: ListTile(
+                    contentPadding:
+                        EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    title: Center(
+                        child: Text(
+                            style: GoogleFonts.acme(
+                                color: Colors.grey.shade50,
+                                fontSize: 20,
+                                fontStyle: FontStyle.normal),
+                            'JobS ybou may need to know')),
+                    subtitle: Text(''),
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => categories()));
+                    },
+                  ),
+                ),
+              ]),
         ),
       ),
       appBar: AppBar(
           actions: [
-          TextButton.icon(
-            onPressed: () {
-              Navigator.pushAndRemoveUntil(
-                  context,
-                  MaterialPageRoute(builder: (context) => MyApp()),
-                  (route) => false);
-            },
-            icon: Icon(Icons.logout),
-            label: Text('Signout'),
-            style: TextButton.styleFrom(primary: Colors.white),
-          )
-        ],
+            TextButton.icon(
+              onPressed: () {
+                Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(builder: (context) => MyApp()),
+                    (route) => false);
+              },
+              icon: Icon(Icons.logout),
+              label: Text('Signout'),
+              style: TextButton.styleFrom(primary: Colors.white),
+            )
+          ],
           backgroundColor: Colors.purple.shade800,
           title: Text(
-             style: GoogleFonts.acme(
-                      color: Colors.grey.shade50,
-                      fontSize: 20,
-                      fontStyle: FontStyle.normal
-                    ),
-            'Categories')),
+              style: GoogleFonts.acme(
+                  color: Colors.grey.shade50,
+                  fontSize: 20,
+                  fontStyle: FontStyle.normal),
+              'Categories')),
     );
   }
 }

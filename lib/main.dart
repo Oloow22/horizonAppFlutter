@@ -18,9 +18,8 @@ import 'package:dio/dio.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-  );
-  
+  await Firebase.initializeApp();
+
   runApp(MyApp());
 }
 
@@ -29,7 +28,6 @@ class MyApp extends StatefulWidget {
 
   @override
   State<MyApp> createState() => _MyAppState();
-  
 }
 
 class _MyAppState extends State<MyApp> {
@@ -45,6 +43,7 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
+
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -114,7 +113,7 @@ class Homepage extends StatelessWidget {
                   color: Colors.grey.shade50,
                   fontSize: 20,
                   fontStyle: FontStyle.normal),
-              'WELCOME TO HORIZON'),
+              'WELCOME TO JOBFINDER'),
         ));
   }
 }
