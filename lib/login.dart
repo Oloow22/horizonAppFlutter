@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:practice/fetchingdata.dart';
 import 'package:practice/jobcompanies.dart';
 import 'package:practice/options.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -61,7 +62,8 @@ class _LoginState extends State<Login> {
                         primary: Colors.indigo.shade300),
                     onPressed: () {
                       auth.signInWithEmailAndPassword(email: email1, password: password1);
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(builder:((context) => Options()) ) );
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(builder:((context) => RemotewxApi()) ) );
+                     // Navigator.of(context).pushReplacement(MaterialPageRoute(builder:((context) => Options()) ) );
                     },
                     child: Text(
                       style: GoogleFonts.acme(
