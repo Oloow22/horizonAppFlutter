@@ -13,6 +13,8 @@ import 'package:practice/main.dart';
 import 'package:practice/unis.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'fetchingdata.dart';
+
 class Options extends StatefulWidget {
   const Options({super.key});
 
@@ -172,11 +174,34 @@ class _OptionsState extends State<Options> {
                                 color: Colors.grey.shade50,
                                 fontSize: 20,
                                 fontStyle: FontStyle.normal),
-                            'JobS ybou may need to know')),
+                            'JobS you may need to know')),
                     subtitle: Text(''),
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => categories()));
+                    },
+                  ),
+                ),
+                Card(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(32.0)),
+                  color: Colors.indigo.shade300,
+                  elevation: 5,
+                  margin: EdgeInsets.all(10),
+                  child: ListTile(
+                    contentPadding:
+                        EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    title: Center(
+                        child: Text(
+                            style: GoogleFonts.acme(
+                                color: Colors.grey.shade50,
+                                fontSize: 20,
+                                fontStyle: FontStyle.normal),
+                            'Available Jobs')),
+                    subtitle: Text(''),
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => RemotewxApi()));
                     },
                   ),
                 ),

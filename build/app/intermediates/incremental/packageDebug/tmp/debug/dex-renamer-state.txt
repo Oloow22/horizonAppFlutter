@@ -1,4 +1,4 @@
-#Fri Oct 21 10:40:35 EAT 2022
+#Sat Oct 22 01:35:56 EAT 2022
 base.2=C\:\\Users\\User\\Documents\\GitHub\\horizonAppFlutter\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes3.dex
 path.2=classes3.dex
 base.1=C\:\\Users\\User\\Documents\\GitHub\\horizonAppFlutter\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex

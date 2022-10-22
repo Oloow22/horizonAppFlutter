@@ -62,8 +62,8 @@ class _LoginState extends State<Login> {
                         primary: Colors.indigo.shade300),
                     onPressed: () {
                       auth.signInWithEmailAndPassword(email: email1, password: password1);
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(builder:((context) => RemotewxApi()) ) );
-                     // Navigator.of(context).pushReplacement(MaterialPageRoute(builder:((context) => Options()) ) );
+                      // Navigator.of(context).pushReplacement(MaterialPageRoute(builder:((context) => RemotewxApi()) ) );
+                     Navigator.of(context).pushReplacement(MaterialPageRoute(builder:((context) => Options()) ) );
                     },
                     child: Text(
                       style: GoogleFonts.acme(
